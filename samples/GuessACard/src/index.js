@@ -50,7 +50,7 @@ GuessACard.prototype.eventHandlers.onSessionStarted = function (sessionStartedRe
 
 GuessACard.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("GuessACard onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    var speechOutput = "Welcome to the Alexa Skills Kit, you can say guess a card";
+    var speechOutput = "Welcome to the the world of magic, you can say guess a card";
     var repromptText = "You can say guess a card";
     response.ask(speechOutput, repromptText);
 };
@@ -64,10 +64,10 @@ GuessACard.prototype.eventHandlers.onSessionEnded = function (sessionEndedReques
 GuessACard.prototype.intentHandlers = {
     // register custom intent handlers
     "GuessACardIntent": function (intent, session, response) {
-        response.tellWithCard("You chose the 3 of spades!", "You chose the 3 of spades!", "You chose the 3 of spades!");
+        response.tellWithCard("Your card is the 3 of spades!", "Your card is the 3 of spades!", "Your card is the 3 of spades!");
     },
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say guess a card to me me!", "You can say guess a card to me me!");
+        response.ask("You can say guess a card to me!", "You can say guess my card to me me!");
     }
 };
 
