@@ -1,0 +1,6 @@
+GuessACardIntent say guess a card
+GuessACardIntent say guess my card
+GuessACardIntent say about my card
+GuessACardIntent guess a card
+GuessACardIntent guess my card
+GuessACardIntent about my card

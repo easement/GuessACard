@@ -1,2 +1,0 @@
-GuessACardIntent say guess a card
-GuessACardIntent say guess my card
